@@ -248,14 +248,14 @@ class ScrapeTides:
         :return: None
         """
         locations = (
-            #'Half Moon Bay, California',
-            #'Huntington Beach, California',
-            #'Providence, Rhode Island',
+            'Half Moon Bay, California',
+            'Huntington Beach, California',
+            'Providence, Rhode Island',
             'Wrightsville Beach, North Carolina',
         )
         for location in locations:
             tides = self.extract_tides(location)
-            print('Location:', location)
+            print('\nLocation:', location)
             for dt, tide_rows in tides.items():
                 for tide_row in tide_rows:
                     print(dt, tide_row)
